@@ -18,7 +18,7 @@ const Franchise = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/franchise/send",
+        "https://restaurant-app-backend-jvif.onrender.com/api/v1/franchise/send",
         { firstName, lastName, email, phone, date, place },
         {
           headers: {
